@@ -1,0 +1,155 @@
+@keyframes colorAnimation
+{
+   0% {color: #f5deb3;}
+   20% {color:#9e6228}  
+   40% {color: rgb(168, 63, 52);} 
+   60% {color: #394545;}  
+   80% {color: #aab1b3;} 
+   100% {color: wheat;}
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: teal;
+    transition: background-color 1s;
+}
+button:hover
+{
+    cursor: pointer;
+}
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 0.1vw solid wheat ;
+    height: 55px;
+    background-color: #2b292b;
+    overflow: hidden;
+    z-index: 2;
+    flex-shrink: 0;
+}
+.tBarButtons
+{
+    padding: 0vw;
+    margin: 0;
+    border:0;
+    height: 100%;
+    width: 10%;
+    min-width: 100px;
+    color: wheat;
+    font-family: Calibri;
+    box-sizing: border-box;
+    font-size: 100%;
+    background-color: #2b292b;
+    flex-shrink: 0;
+}
+.tBarButtons:hover
+{
+
+    background-color: #92817b ;
+    transition: background-color 0.5s;
+}
+#butColor
+{
+    
+    margin: 0px;
+    text-decoration-line: underline;
+    animation: colorAnimation 16s infinite;
+
+}
+#secSlider
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    top: -15px;
+    margin: auto;
+    z-index: 1;
+    transition: top 1s;
+    
+}
+.animateSliderIn
+{
+    top: 10vh !important;
+    transition: top 1s;
+}
+#secSlider button
+{
+    margin: 3%;
+    margin-top: 50px;
+    height: 50px;
+    width: 50px;
+    border-color:transparent;
+    border-radius: 50px;
+}
+#butRed
+{
+   background-color: #a83f33;
+}
+#butBrown
+{
+    background-color: #9e6228;
+    
+}
+#butBlue
+{
+    background-color: #394545;
+}
+#butCyan
+{
+    background-color: #aab1b3;
+}
+#butRan
+{
+    background-image: url(random.png);
+    
+}
+/* Display */
+#display
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+#display>*
+{
+    margin: 1vh;
+    padding: 1vh;
+}
+#display #timeArea
+{
+    display: flex;
+    flex-flow: column;
+    height: 40vh;
+}
+/* text Area */
+@keyframes opacity
+{
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+.txtWelcome
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    color: wheat;
+    animation: opacity 3s;
+}
+#txtTime,#txtDate
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5vw;
+    text-align: center;
+    color: wheat;
+    margin: 1vh;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registeration</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body id="mainBody">
+    <header id="toolBar">
+        <button class="tBarButtons" id="butregister">REGISTER</button>
+        <button class="tBarButtons" id="butgallery">GALLERY</button>
+        <button class="tBarButtons" id="butHome">HOME</button>
+        <button class="tBarButtons" id="butgame">GAME</button>
+        <button class="tBarButtons" id="butabout">ABOUT US</button>
+    </header>
+        <form action="" method=get>
+            <header id="formHeader">
+                <p>Registration Form</p>
+            </header>
+            <div id="secContainer">
+                <section id="leftSec">
+                    <article class="artLeft">
+                        <p>Name</p>
+                    </article>
+                    <article class="artLeft">
+                        <p>User Name</p>
+                    </article>
+                    <article class="artLeft">
+                            <p>Password</p>
+                    </article>
+                    <article class="artLeft">
+                        <p>Email</p>
+                    </article>
+                    <article class="artLeft">
+                        <p>Phone</p>
+                    </article>
+                </section >
+                <section id="rightSec">
+                    <article class="artRight">
+                        <input id="fName" type="text" placeholder="First Name">
+                        <input id="lName" type="text" placeholder="Last Name">
+                    </article>
+                    <article class="artRight">
+                        <input id="txtUsrName"  type="text" required pattern="^[a-zA-Z0-9]{5,8}$" oninvalid="setCustomValidity('Please enter 5:8 char username')" oninput="setCustomValidity('')">
+                    </article>
+                    <article class="artRight">
+                        <input type="password" required pattern="^[a-zA-Z0-9]{7,}$" oninvalid="setCustomValidity('Minimum password 7 char legnth')" oninput="setCustomValidity('')">
+                    </article>
+                    <article class="artRight">
+                        <input type="email" name="" id="txtMail" pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]{2,61}[a-zA-Z0-9]\.[a-zA-Z0-9]{1,61}$" required oninvalid="setCustomValidity('Please enter vlid Email Address')" oninput="setCustomValidity('')" >
+                    </article>
+                    <article class="artRight">
+                        <input id="txtEgyptKey" type="text" value="+02"  readonly><input id="txtPhNo" type="text" required pattern="^0[1]{1}\d{9}$" oninvalid="setCustomValidity('Please, enter a phone number in the format: 01xxxxxxxx')" oninput="setCustomValidity('')" >
+                    </article>
+                </section>
+            </div>
+            <footer id="formFooter">
+                <button type="submit" id="butSubmit">Submit</button>
+                <button type="reset" id="butReset">Reset</button>
+            </footer>
+            
+        </form>
+    <script src="Register.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color:#394545;
+    transition: background-color 1s;
+}
+button:hover
+{
+    cursor: pointer;
+}
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 0.1vw solid wheat ;
+    height: 55px;
+    background-color: #2b292b;
+    overflow: hidden;
+    z-index: 2;
+    flex-shrink: 0;
+}
+.tBarButtons
+{
+    padding: 0vw;
+    margin: 0;
+    border:0;
+    height: 100%;
+    width: 10%;
+    min-width: 100px;
+    color: wheat;
+    font-family: Calibri;
+    box-sizing: border-box;
+    font-size: 100%;
+    background-color: #2b292b;
+    flex-shrink: 0;
+}
+.tBarButtons:hover
+{
+
+    background-color: #92817b ;
+    transition: background-color 0.5s;
+}
+    
+/* Display */
+#display
+{
+    position: relative;
+    height: 400px;
+    width: 720px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid wheat;
+    background-size: cover;
+    -webkit-transition: background-image 0.3s ease-in-out;
+    -moz-transition: background-image 0.3s ease-in-out;
+    transition: background-image 0.3s ease-in-out;
+}
+.img1
+{
+    background-image: url(img1.jpg);
+    
+}
+.img2
+{
+    background-image: url(img2.jpg);
+    
+}
+.img3
+{
+    background-image: url(img3.jpg);
+    
+}
+.img4
+{
+    background-image: url(img4.jpg);
+    
+}
+.img5
+{
+    background-image: url(img5.jpg);
+    
+}
+.img6
+{
+    background-image: url(img6.jpg);
+    
+}
+/* Gallery Slider */
+.galleryImg
+{
+    position: relative;
+    top: 0px;
+    width: 200px;
+    height: 128px;
+    border: wheat 1px solid ;
+    transition: top 0.5s;
+}
+.galleryImg:hover
+{
+    cursor: pointer;
+    top: 20px;
+}

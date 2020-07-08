@@ -1,0 +1,162 @@
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color:#394545;
+    transition: background-color 1s;
+}
+button:hover
+{
+    cursor: pointer;
+}
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 0.1vw solid wheat ;
+    height: 55px;
+    background-color: #2b292b;
+    overflow: hidden;
+    z-index: 2;
+    flex-shrink: 0;
+}
+.tBarButtons
+{
+    padding: 0vw;
+    margin: 0;
+    border:0;
+    height: 100%;
+    width: 10%;
+    min-width: 100px;
+    color: wheat;
+    font-family: Calibri;
+    box-sizing: border-box;
+    font-size: 100%;
+    background-color: #2b292b;
+    flex-shrink: 0;
+}
+.tBarButtons:hover
+{
+
+    background-color: #92817b ;
+    transition: background-color 0.5s;
+}
+/* form */
+form
+{
+    /* position: absolute; */
+    width: 500px;
+    max-width: 100vw;
+    min-width: 40vw;
+    height: 500px;
+    max-height: 100vw;
+    min-height:40vw ;
+    margin: auto;
+    margin-top: 2vw;
+    background-color: white;
+    border: 0.2vw solid wheat;
+    border-radius: 1vw;
+}
+/* form */ /*form header*/
+#formHeader
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    background-color: #394545;
+}
+#formHeader p
+{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 130%;
+    color: wheat;
+}
+/* form */ /*form content*/
+#secContainer
+{
+    display: flex;
+    height: 75%;
+
+}
+#leftSec
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+.artLeft
+{
+    margin-left: 30%;
+    height: 20%;
+}
+.artLeft p
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+    margin-top: 20%;
+}
+#rightSec
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.artRight
+{
+    height: 20%;
+}
+input
+{
+    height: 25%;
+    width: 80%;
+    margin-top: 6%;
+    margin-left: 3%;
+    border-radius: 0.3vw;
+    background-color: rgba(170, 177, 179, 0.4);
+    fill-opacity: 50%;
+}
+.artRight #lName,.artRight #fName
+{
+    width: 38%;
+    
+}
+#txtEgyptKey
+{
+    width: 16%;
+}
+#txtPhNo
+{
+    width: 60%;
+}
+/* form */ /*form footer*/
+#formFooter
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15% ;
+    /* background-color: aqua; */
+}
+#formFooter button
+{
+    width: 18%;
+    height: 60%;
+    margin: 5%;
+    background-color: #a83f33;
+    border-radius: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120% ;
+    color: wheat;
+    border: 0px;
+}
+    
+/* Display */
+
