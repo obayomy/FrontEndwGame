@@ -1,4 +1,4 @@
-# FrontEndwGame /n
-A simple front end website with a lite game /n
+# FrontEndwGame
+A simple front end website with a lite game
 Link to WebSite:
 https://obayomy.github.io/FrontEndwGame/
